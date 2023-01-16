@@ -1,0 +1,701 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+
+/*
+Header
+*/
+
+header {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 1fr 350px;
+
+}
+
+header .logo-div .logo {
+    width: 111px;
+}
+
+header ul {
+    margin: 0;
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 14px;
+
+}
+
+header ul li:hover {
+    cursor: pointer;
+}
+
+header .icons-part ul li {}
+
+header .icons-part ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .first-part {
+    display: flex;
+
+    align-items: center;
+}
+
+header .first-part ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/*
+Main
+*/
+main {
+    height: 600px;
+    margin-top: 0;
+    color: white;
+    padding-left: 30px;
+    padding-top: 150px;
+    background-image: url(home-images/first-part-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .movie-category {
+    margin: 0;
+
+}
+
+main .movie-name {
+    margin: 0;
+    font-size: 80px;
+    margin-bottom: 30px;
+    line-height: 60px;
+}
+
+main .movie-name span {
+
+    font-weight: 100;
+}
+
+main .redbox {
+    display: inline-block;
+    background-color: rgb(194, 11, 11);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 2px;
+    width: 22px;
+    padding: 2px 2px 2px 2px;
+    font-weight: 300;
+
+    line-height: 10px;
+}
+
+main .inline {
+    display: inline-block;
+}
+
+main .text-part .special {
+    font-weight: 100;
+    margin-left: 8px;
+}
+
+main .text-part .inline {
+    font-weight: 100;
+}
+
+main .text-part .movie-description {
+    width: 50%;
+}
+
+main .text-part .movie-producer {
+    width: 30%;
+    font-style: italic;
+}
+
+main .text-part h2 {
+    margin-top: 0;
+}
+
+main .text-part button {
+    border: none;
+    border-radius: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+main .text-part .first-button {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+
+    padding-right: 30px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+main .text-part .first-button:hover {
+    cursor: pointer;
+}
+
+main .text-part .second-button {
+    color: white;
+    position: relative;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-right: 10px;
+}
+
+main .text-part .second-button:hover {
+    cursor: pointer;
+}
+
+main .play-icon {
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 10px;
+}
+
+main .info-icon {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 10px;
+}
+
+main .popular {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+main .populars-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));
+    grid-gap: 5px;
+    /* grid-auto-columns: calc(100% - 67rem);
+        grid-auto-flow: column;
+        grid-gap: 5px;
+        overflow-x: auto;*/
+}
+
+.populars-div img {
+    width: 100%;
+    height: auto;
+}
+
+.populars-div img:hover {
+    cursor: pointer;
+}
+
+main .wrapper {
+    position: relative;
+}
+
+main .wrapper .left-angle {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+main .wrapper .left-angle:hover {
+    cursor: pointer;
+}
+
+/*
+Categories-Section
+*/
+.categories-section {
+    position: relative;
+    padding-left: 30px;
+    background-color: black;
+}
+
+.categories-section .title {
+
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.categories-section .keep-watching-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));
+    grid-gap: 5px;
+    /*grid-auto-columns: calc(100% - 67rem);
+    grid-auto-flow: column;
+    grid-gap: 5px;
+    overflow-x: auto;*/
+}
+
+.categories-section .keep-watching-div img {
+    width: 100%;
+    height: auto;
+}
+
+.categories-section .keep-watching-div img:hover {
+    cursor: pointer;
+}
+.categories-section .wrapper2{
+    position: relative;
+}
+.categories-section .left-angle2 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+/*
+Agenda-Section
+*/
+
+.agenda-section {
+    position: relative;
+    padding-left: 30px;
+    background-color: black;
+}
+
+.agenda-section .title {
+
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.agenda-section .agenda-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));
+    grid-gap: 5px;
+    /*grid-auto-columns: calc(100% - 67rem);
+    grid-auto-flow: column;
+    grid-gap: 5px;
+    overflow-x: auto;*/
+}
+
+.agenda-section .agenda-div img {
+    width: 100%;
+    height: auto;
+}
+
+.agenda-section .agenda-div img:hover {
+    cursor: pointer;
+}
+.agenda-section .wrapper3{
+    position: relative;
+}
+
+.agenda-section .left-angle3 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+/*
+Originals-Section
+*/
+.originals-section {
+    position: relative;
+    padding-left: 30px;
+    background-color: black;
+}
+
+.originals-section .title {
+
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.originals-section .originals-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));
+    grid-gap: 5px;
+    /* grid-auto-columns: calc(100% - 67rem);
+    grid-auto-flow: column;
+    grid-gap: 5px;
+    overflow-x: auto;*/
+}
+.originals-section .wrapper4{
+    position: relative;
+}
+
+.originals-section .left-angle4 {
+    position: absolute;
+    right: 30px;
+    bottom: 190px;
+}
+
+.originals-section .originals-div img {
+    width: 100%;
+    height: 100%;
+}
+
+.originals-section .originals-div img:hover {
+    cursor: pointer;
+}
+
+/*
+TopList-Section
+*/
+.top-list-section {
+    position: relative;
+    padding-left: 50px;
+    background-color: black;
+}
+
+.top-list-section .title {
+
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.top-list-section .top-list-div {
+    display: grid;
+    padding-left: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(1%, .5fr));
+    grid-gap: 5px;
+}
+.top-list-section .wrapper5{
+    position: relative;
+}
+
+.top-list-section .left-angle5 {
+    position: absolute;
+    right: 30px;
+    bottom: 220px;
+}
+
+.top-list-section .top-list-div img {
+    width: 100%;
+    height: 80%;
+}
+
+.top-list-section .top-list-div .top-list-movie:hover {
+    cursor: pointer;
+}
+
+/*
+Watched-Section
+*/
+.watched-section {
+    padding-left: 0;
+    position: relative;
+    background-color: black;
+}
+
+.watched-section .title {
+
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.watched-section .watched-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));
+    grid-gap: 5px;
+}
+
+.watched-section .watched-div img {
+    width: 100%;
+    height: auto;
+}
+
+.watched-section .watched-div img:hover {
+    cursor: pointer;
+}
+.watched-section .wrapper6{
+    position: relative;
+}
+
+.watched-section .left-angle6 {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+}
+
+/*
+MyList Section
+*/
+
+.my-list-section {
+    position: relative;
+    padding-left: 50px;
+    background-color: black;
+    padding-bottom: 60px;
+}
+
+.my-list-section .title {
+
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.my-list-section .my-list-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1%, .5fr));
+    grid-gap: 5px;
+}
+.wrapper7{
+    position: relative;
+}
+
+.my-list-section .left-angle7 {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+.my-list-section .my-list-div img {
+    width: 100%;
+    height: auto;
+}
+
+.my-list-section .my-list-div img:hover {
+    cursor: pointer;
+}
+
+/*
+Footer-Section
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(180, 179, 179);
+}
+
+footer .socials {
+    width: 100%;
+    margin-left: 510px;
+}
+
+footer .socials img {
+    margin-right: 14px;
+}
+
+footer .socials img:hover {
+    cursor: pointer;
+}
+
+footer .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+footer .wrapper a {
+    text-decoration: none;
+    color: rgb(180, 179, 179);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 14px;
+}
+
+footer .wrapper a:hover {
+    text-decoration: underline;
+    color: rgb(180, 179, 179);
+}
+
+footer .button-wrapper {
+    width: 100%;
+    margin-left: 510px;
+}
+
+footer button {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(180, 179, 179);
+    background-color: rgba(0, 0, 0);
+    color: rgb(180, 179, 179);
+}
+
+footer button:hover {
+    cursor: pointer;
+}
+
+footer .copyright {
+    width: 100%;
+    margin-left: 510px;
+}
+
+/*
+MEDIA QUERIES
+*/
+@media screen and (max-width: 766px) {
+
+    /*Header
+    */
+header{
+   
+    display: flex;
+    flex-direction: column;
+}
+header ul li{
+    display: block;
+}
+header .logo-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+header .first-part ul {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header .first-part ul li{
+    margin-bottom: 10px;
+}
+header .icons-part ul{
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+/*
+main
+*/
+main{
+    background-image: url(home-images/first-part-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px 750px;
+}
+main .movie-category{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+main .movie-name {
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 35px;
+}
+main .text-part .movie-description {
+    width: 80%;
+}
+
+main .text-part .movie-producer {
+    width: 70%;
+   
+}
+main .populars-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9%, 1fr));
+    grid-gap: 5px;
+  
+}
+.populars-div img {
+    width: 100%;
+    height: auto;
+}
+main .wrapper{
+   margin-top: 60px;
+}
+.left-angle, .left-angle2,.left-angle3,.left-angle4,.left-angle5,.left-angle6,.left-angle7{
+    display: none;
+}
+footer{
+    padding-left: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+footer .wrapper{
+    display: block;
+   
+}
+footer .socials{
+    margin-left: 0;
+}
+footer .button-wrapper{
+    margin-left: 0;
+}
+footer .copyright{
+   font-size: 12px;
+    margin-left: 0;
+}
+footer .first, footer .second, footer .third, footer .fourth{
+ margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 840px) {
+    header{
+        grid-template-columns: 70px 350px 350px;
+    }
+    header ul li{
+        font-size: 12px;
+    }
+    header .logo-div .logo {
+        width: 67px;
+    }
+    .left-angle, .left-angle2,.left-angle3,.left-angle4,.left-angle5,.left-angle6,.left-angle7{
+        display: none;
+    }
+    footer{
+        padding-left: 20px;
+    }
+    footer .socials{
+        margin-left: 20px;
+    }
+    footer .button-wrapper{
+        margin-left: 0;
+    }
+    footer .copyright{
+       font-size: 12px;
+        margin-left: 0;
+    }
+    footer .wrapper{
+        gap: 30px;
+    }
+   
+}
+@media screen and (max-width: 1118px) {
+    .left-angle, .left-angle2,.left-angle3,.left-angle4,.left-angle5,.left-angle6,.left-angle7{
+        display: none;
+    }
+}

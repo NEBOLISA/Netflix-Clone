@@ -1,0 +1,173 @@
+body{
+    
+    padding-left:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-image: url(signinImages/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.35);
+}
+
+header .logo{
+    position: absolute;
+    top: 30px;
+    left: 45px;
+}
+.wrapper-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signin-box{
+    padding-top: 30px;
+    padding-bottom: 55px;
+    position: relative;
+    display: flex;
+    margin-top:90px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.signin-box .title{
+    width: 100%;
+    margin-left: 140px;
+    text-align: left;
+    color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.signin-box .inputs{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.signin-box .inputs input{
+    width: 314px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    padding-left: 10px;
+    border-radius: 4px;
+   
+}
+.signin-box .inputs button{
+    width: 314px;
+    height: 48px;
+    border: 0;
+    font-weight: 600;
+    font-size: medium;
+    background-color: red;
+    color: white;
+}
+.signin-box .inputs button:hover{
+    cursor: pointer;
+}
+.signin-box .actions{
+    display: flex;
+    color: rgb(187, 186, 186);
+    font-size: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    width: 100%;
+    font-weight: 100;
+    justify-content: space-around;
+}
+.signin-box .actions h3 a{
+    color: rgb(187, 186, 186);
+    text-decoration: none;
+}
+.signin-box .actions a:hover{
+    text-decoration: underline;
+}
+.signin-box .bottom-part{
+   padding-left: 64px;
+   margin-top: 30px;
+   color:rgb(187, 186, 186);
+  
+   font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.signin-box .bottom-part h2{
+    font-size: 14px;
+}
+.signin-box .bottom-part h2 a{
+color: white;
+text-decoration: none;
+}
+ .bottom-part h2 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signin-box .bottom-part h3 a{
+ text-decoration: none;
+ color: blue;
+}
+.signin-box .bottom-part h3 a.more:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signin-box .bottom-part h3{
+    width: 75%;
+    font-size: 12px;
+}
+.signin-box .bottom-part .fa-facebook{
+    margin-right: 10px;
+    
+    margin-top: 0;
+}
+
+/* Footer
+*/
+footer{
+    position: relative;
+    padding-left: 0;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color:#737373;
+    background-color: black;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.9);
+    justify-content: center;
+    gap: 100px;
+}
+footer h3{
+    margin-bottom: 20px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+footer .second-footer,.third-footer,.fourth-footer{
+    padding-top: 40px;
+}
+footer a{
+    color:#737373;
+    text-decoration: none;
+}
+footer a:hover{
+    color:#737373; 
+    text-decoration: underline;
+}
+.footer::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000000;
+    opacity: .35
+}

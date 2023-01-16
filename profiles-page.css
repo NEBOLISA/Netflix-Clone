@@ -1,0 +1,49 @@
+body{
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color:black ;
+    color: rgb(180, 180, 180);
+   
+}
+header img{
+    width: 100px;
+}
+.mid-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.mid-section .icons img{
+    width: 70px;
+}
+.mid-section .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.mid-section .icons:hover{
+    cursor: pointer;
+}
+.mid-section .icons p{
+    margin-top: 0;
+    text-align: center;
+}
+.mid-section h2{
+    color: white;
+    text-align: center;
+}
+.mid-section .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid-section .wrapper button{
+    background-color: black;
+    border: 1px solid rgb(180, 180, 180);
+    color: rgb(180, 180, 180);
+    padding: 7px 10px;
+}
+.mid-section .wrapper button:hover{
+    cursor: pointer;
+}
